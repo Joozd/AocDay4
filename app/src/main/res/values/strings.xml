@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AocDay4</string>
+    <string name="name">Name:</string>
+    <string name="john_doe">John Doe</string>
+    <string name="year_of_birth">Year of birth:</string>
+    <string name="empty">-</string>
+    <string name="issue_year">Issue Year:</string>
+    <string name="valid_until">Valid until:</string>
+    <string name="passport_id">Passport ID:</string>
+    <string name="height">Height:</string>
+</resources>

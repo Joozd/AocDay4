@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/faceImage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_face" />
+
+            <ImageView
+                android:id="@+id/hairImage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_hair" />
+
+            <ImageView
+                android:id="@+id/eyesImage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_eyes" />
+
+            <TextView
+                android:id="@+id/nameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/name"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/eyesImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/john_doe"
+                app:layout_constraintStart_toStartOf="@+id/nameTitle"
+                app:layout_constraintTop_toBottomOf="@+id/nameTitle" />
+
+
+            <TextView
+                android:id="@+id/dobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/year_of_birth"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/eyesImage"
+                app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+            <TextView
+                android:id="@+id/dobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                app:layout_constraintStart_toStartOf="@+id/dobTitle"
+                app:layout_constraintTop_toBottomOf="@+id/dobTitle" />
+
+            <TextView
+                android:id="@+id/heightTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/height"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/eyesImage"
+                app:layout_constraintTop_toBottomOf="@+id/dobText" />
+
+            <TextView
+                android:id="@+id/heightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                app:layout_constraintStart_toStartOf="@+id/heightTitle"
+                app:layout_constraintTop_toBottomOf="@+id/heightTitle" />
+
+            <TextView
+                android:id="@+id/issueTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/issue_year"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nameTitle" />
+
+            <TextView
+                android:id="@+id/issueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                app:layout_constraintEnd_toEndOf="@+id/issueTitle"
+                app:layout_constraintTop_toBottomOf="@+id/issueTitle" />
+
+            <TextView
+                android:id="@+id/validTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valid_until"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dobTitle" />
+
+            <TextView
+                android:id="@+id/validText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                app:layout_constraintEnd_toEndOf="@+id/validTitle"
+                app:layout_constraintTop_toBottomOf="@+id/validTitle" />
+
+            <TextView
+                android:id="@+id/passIdTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passport_id"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/heightTitle" />
+
+            <TextView
+                android:id="@+id/passIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                app:layout_constraintEnd_toEndOf="@+id/passIdTitle"
+                app:layout_constraintTop_toBottomOf="@+id/passIdTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
